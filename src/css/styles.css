@@ -180,4 +180,13 @@ body {
   color: #fdfd66;
 }
 
+@media only screen and (min-width: 1024px) {
+  .hero__h1 {
+    font-size: 3em;
+  }
+  .hero__link {
+    font-size: 1.8em;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
