@@ -152,7 +152,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1em;
+  gap: 2em;
 }
 .hero__h1 {
   color: #fef;
@@ -164,9 +164,17 @@ body {
   hyphens: manual;
 }
 .hero__link {
+  background: #444;
+  padding: 0.2em 0.5em;
+  border-radius: 10px;
+  box-shadow: 1px 1px 30px 15px rgba(0, 0, 0, 0.3);
   color: #fdfd66;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
   font-size: 1.5em;
+  cursor: pointer;
+}
+.hero__link:active {
+  text-decoration: underline;
 }
 .hero__span {
   color: #fdfd66;
