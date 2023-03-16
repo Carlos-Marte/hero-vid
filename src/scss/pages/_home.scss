@@ -1,0 +1,58 @@
+body {
+    font-family: $font-family;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: red;
+    display: grid;
+    grid-template-areas: 'show';
+    place-items: center;
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        grid-area: show;
+        @extend %crystal-background;
+    }
+
+    &__video {
+        width: 100%;
+        height: 100vh;
+        grid-area: show;
+    }
+
+    &__box-texts {
+        grid-area: show;
+        z-index: 100;
+        padding: 0 0.5em;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    &__h1 {
+        color: $white;
+        font-size: 2.5em;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 1.2;
+        text-shadow: 1px 1px 10px rgba(0 0 0 /.2);
+        hyphens: manual;
+    }
+
+    &__link {
+        color: $yellow;
+        text-shadow: 1px 1px 10px rgba(0 0 0 /.2);
+        font-size: 1.5em;
+    }
+
+    &__span {
+        color: $yellow;
+    }
+}
