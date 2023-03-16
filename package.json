@@ -1,0 +1,20 @@
+{
+  "name": "hero-vid",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open",
+    "build": "vite build",
+    "preview": "vite preview --open",
+    "sass-dev": "sass --watch --update --style=expanded src/scss:src/css",
+    "sass-prod": "sass --no-source-map --style=compressed src/scss:src/css"
+  },
+  "devDependencies": {
+    "sass": "1.59.3",
+    "vite": "4.1.0"
+  },
+  "dependencies": {
+    "aos": "2.3.4"
+  }
+}
